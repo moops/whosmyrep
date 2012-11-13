@@ -3,6 +3,8 @@ installed psycopg2 with easy_intall (for postgres)
 
 auth user: admin - d3vteam
 
+us house data api: http://www.govtrack.us/developers/api
+
 todo:
 start using virtualenv
 switch postgres to default connection using sockets
