@@ -1,0 +1,10 @@
+{% if reps %}
+    local
+    <ul>
+    {% for rep in reps %}
+        <li><a href="/reps/{{ rep.id }}/">{{ rep.first_name }} {{ rep.last_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No representatives are available.</p>
+{% endif %}

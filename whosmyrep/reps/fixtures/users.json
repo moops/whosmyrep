@@ -1,0 +1,92 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.group", 
+        "fields": {
+            "name": "public", 
+            "permissions": [
+                25, 
+                26, 
+                27
+            ]
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "admin", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-11-10T19:19:53.976Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$ejtVHgqgRLS6$CinGfu2lgJtqyvArwRuES7Y8nfs7hUiO7WDe0m0S/d8=", 
+            "email": "admin.whosmyrep@raceweb.ca", 
+            "date_joined": "2012-11-10T19:16:14.574Z"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "dave", 
+            "first_name": "dave", 
+            "last_name": "shaw", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-11-13T22:00:17Z", 
+            "groups": [
+                1
+            ], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$nKAH1XPTUTOQ$aggaZH71z3W3zurMiNI0iPIWRUL5s8T1kGeDUOaTMNI=", 
+            "email": "dave-whosmyrep@raceweb.ca", 
+            "date_joined": "2012-11-13T22:00:17Z"
+        }
+    },
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "jason", 
+            "first_name": "jason", 
+            "last_name": "hall", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-11-13T22:00:17Z", 
+            "groups": [
+                1
+            ], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$nKAH1XPTUTOQ$aggaZH71z3W3zurMiNI0iPIWRUL5s8T1kGeDUOaTMNI=", 
+            "email": "jason-whosmyrep@raceweb.ca", 
+            "date_joined": "2012-11-13T22:00:17Z"
+        }
+    },
+    {
+        "pk": 4, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "indra", 
+            "first_name": "indra", 
+            "last_name": "venables", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-11-13T22:00:17Z", 
+            "groups": [
+                1
+            ], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$nKAH1XPTUTOQ$aggaZH71z3W3zurMiNI0iPIWRUL5s8T1kGeDUOaTMNI=", 
+            "email": "indra-whosmyrep@raceweb.ca", 
+            "date_joined": "2012-11-13T22:00:17Z"
+        }
+    }
+]

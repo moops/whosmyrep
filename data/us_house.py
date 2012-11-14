@@ -28,5 +28,5 @@ for rep in data['objects']:
 	reps.append(r)
 	i += 1
 
-with open('../whosmyrep/reps/fixtures/initial_data.json', 'w') as outfile:
+with open('../whosmyrep/reps/fixtures/us_house.json', 'w') as outfile:
 	json.dump(reps, outfile, indent=4)
