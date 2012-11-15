@@ -2,7 +2,11 @@
     local
     <ul>
     {% for rep in reps %}
-        <li><a href="/reps/{{ rep.id }}/">{{ rep.first_name }} {{ rep.last_name }}</a></li>
+        <li><a href="/reps/{{ rep.id }}/">{{ rep.first_name }} {{ rep.last_name }}</a>
+        {% if rep.avg_rank %}
+            - {{ rep.avg_rank }}
+        {% endif %}
+        </li>
     {% endfor %}
     </ul>
 {% else %}

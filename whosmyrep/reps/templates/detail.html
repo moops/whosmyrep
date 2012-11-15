@@ -1,5 +1,13 @@
 {% if rep %}
     local detail for {{ rep.first_name }} {{ rep.last_name }}
+    
+    <form action="/reps/{{ rep.id }}/rank/" method="post">
+        {% csrf_token %}
+        <label for="rank">rank</label><br />
+        <input type="text" name="rank" id="rank" />
+        <input type="submit" value="rank" />
+    </form>
+    
 {% else %}
     <p>No representative specified.</p>
 {% endif %}

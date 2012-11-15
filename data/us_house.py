@@ -9,11 +9,10 @@ json_data = urllib2.urlopen(data_url)
 data = json.load(json_data)
 
 reps = []
-i = 1
-for rep in data['objects']:
+for i,rep in enumerate(data['objects']):
 	r = {
 		'model' : 'reps.rep',
-		'pk' : i,
+		'pk' : i+1,
 		'fields' : {
 			'first_name' : rep['firstname'],
 			'middle_name' : rep['middlename'],
@@ -26,7 +25,6 @@ for rep in data['objects']:
 		}
 	}
 	reps.append(r)
-	i += 1
 
 with open('../whosmyrep/reps/fixtures/us_house.json', 'w') as outfile:
 	json.dump(reps, outfile, indent=4)
