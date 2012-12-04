@@ -1,6 +1,14 @@
 installed django with easy_install
 installed psycopg2 with easy_intall (for postgres)
 
+virtualenv:
+easy_install virtualenv
+virtualenv DJANGO
+cd DJANGO
+source bin/activate
+pip install psycopg2
+pip install django
+
 auth user: admin - d3vteam
 
 us house data api: http://www.govtrack.us/developers/api

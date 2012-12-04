@@ -16,6 +16,9 @@ class Rep(models.Model):
 	
 	def full_name():
 		self.first_name + ' ' + self.middle_name + ' ' + self.last_name
+		
+	#def build_avg_rank(num):
+	#	print('building avg rank with ' + str(num) + '...')
 	
 	def __unicode__(self):
 		return self.first_name
@@ -26,4 +29,4 @@ class Rank(models.Model):
 	rank = models.PositiveSmallIntegerField()
 	
 	def __unicode__(self):
-		return self.user +' - ' + self.rep + ' - ' + str(self.rank)
+		return str(self.user) +' - ' + str(self.rep) + ' - ' + str(self.rank)
